@@ -1,0 +1,27 @@
+{
+  "cloud_memory": {
+    "enabled": false,
+    "providers": {
+      "google_sheets": {
+        "enabled": false,
+        "spreadsheet_id": "",
+        "api_key": "",
+        "description": "Structured data: contacts, jobs, inventory"
+      },
+      "google_drive": {
+        "enabled": false,
+        "folder_id": "",
+        "api_key": "",
+        "description": "Large files: manuals, PDFs, images"
+      },
+      "supabase": {
+        "enabled": false,
+        "url": "",
+        "anon_key": "",
+        "description": "Relational data, fast queries"
+      }
+    },
+    "sync_interval_minutes": 30,
+    "auto_sync": true
+  }
+}

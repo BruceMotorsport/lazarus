@@ -1,0 +1,34 @@
+{
+  "models": {
+    "primary": {
+      "provider": "opencode-zen",
+      "model": "mimo-v2.5",
+      "purpose": "Main conversation model"
+    },
+    "vision": {
+      "provider": "opencode-zen",
+      "model": "mimo-v2.5",
+      "purpose": "Image analysis"
+    },
+    "chatbot_api": {
+      "provider": "groq",
+      "model": "qwen/qwen3.6-27b",
+      "purpose": "Bruce Racing/GoGetter chatbot responses",
+      "fallback_order": ["groq", "mimo", "xai", "openai"]
+    },
+    "coding": {
+      "provider": "opencode-zen",
+      "model": "mimo-v2.5",
+      "purpose": "Code generation and debugging"
+    }
+  },
+  "banned": {
+    "glm": "Privacy violation — knew about failed bank transactions",
+    "openai": "User banned OpenAI"
+  },
+  "notes": {
+    "mimo_api": "Out of credits — use opencode-zen instead",
+    "xai_api": "Out of credits — use opencode-zen instead",
+    "groq_api": "Working — qwen/qwen3.6-27b is free tier"
+  }
+}
